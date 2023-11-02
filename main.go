@@ -2,9 +2,16 @@ package main
 
 import "fmt"
 
-func main() {
-	s0 := new(string)
+func fn() (a int) {
+	defer func() {
+		a = 2
+		fmt.Println("9999")
+	}()
 
-	*s0 = "sss"
-	fmt.Println(*s0)
+	a = 1
+	return
+}
+
+func main() {
+	fmt.Println(fn())
 }
