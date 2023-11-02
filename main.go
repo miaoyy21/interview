@@ -1,1 +1,5 @@
-package interview
+package main
+
+func main() {
+
+}
