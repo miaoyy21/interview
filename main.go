@@ -2,16 +2,12 @@ package main
 
 import "fmt"
 
-func fn() (a int) {
-	defer func() {
-		a = 2
-		fmt.Println("9999")
-	}()
-
-	a = 1
-	return
-}
+const (
+	i = 7
+	j
+	k
+)
 
 func main() {
-	fmt.Println(fn())
+	fmt.Println(i, j, k)
 }
