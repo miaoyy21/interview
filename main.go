@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 const (
-	i = 7
+	i = 7 + iota
 	j
 	k
 )
