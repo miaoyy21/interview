@@ -26,4 +26,7 @@ func main() {
 	s1 := A{Id: "1", Name: "A"}
 	s2 := *(*B)(unsafe.Pointer(&s1))
 	fmt.Printf("%#v", s2)
+
+	aaa := new([]string)
+	fmt.Println(aaa == nil)
 }
