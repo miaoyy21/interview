@@ -17,7 +17,7 @@ type B struct {
 }
 
 func main() {
-	a := "aaabbbccc"
+	a := "abc"
 	ssh := *(*reflect.StringHeader)(unsafe.Pointer(&a))
 	fmt.Printf("%#v\n", ssh)
 	b := *(*[]byte)(unsafe.Pointer(&ssh))
